@@ -1,0 +1,207 @@
+
+body,p,span,h1,h3,h4,h5,h6{
+    font-family: 'Work Sans', sans-serif;
+}
+
+// main-section
+
+
+.main-section{
+    
+    .main-left{
+        h6{
+            color: rgb(34, 73, 201);
+            font-size: 18px;
+
+        }
+        h3{
+            font-size: 35px;
+            font-weight: 600;
+            width: 500px;
+
+        }
+        .small{
+            width: 50px;
+            height: 2px;
+            background: rgb(8, 65, 150);
+
+        }
+        p{
+            color: rgb(90, 72, 72);
+
+        }
+    }
+}
+
+//  about-secction
+
+.about-secction{
+    position: relative;
+    .in-about-item{
+        background: #f6f9fc;
+        padding: 30px;
+        border-radius: 10px;
+        transition: .9s;
+        &:hover{
+            background: #3763eb;
+            color: #fff;
+        }
+        &:hover .my{
+            background: #fff;
+            
+        }
+        &:hover p{
+           color: #fff;
+            
+        }
+        &:hover .icon{
+            color: #3763eb;
+            background: #fff;
+             
+         }
+        h4{
+            font-size: 20px;
+            font-weight: 600;
+           
+
+        }
+        .icon{
+            width: 50px;
+            height: 50px;
+            background: #3763eb;
+            color: #fff;
+            text-align: center;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            padding-top: 10px;
+            
+
+        }
+        .my{
+            width: 40px;
+            height: 2px;
+            background: #295e94;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+
+
+        }
+        p{
+            color: rgb(90, 72, 72);
+
+        }
+
+    }
+  .last-picture{
+      position: absolute;
+      left: 10px;
+      bottom: 0;
+      z-index: -1;
+  }
+    
+}
+
+// last-picture
+
+.banner{
+    background: url(img/video-bg.jpg);
+    padding: 300px;
+    position: relative;
+    
+        .blank-div{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(1, 10, 12, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+         
+            h4{
+                font-size: 22px;
+
+            }
+            h1{
+                font-weight: bold;
+
+            }
+            .mini-banner{
+                background: #3763eb;
+                width: 50px;
+                height: 3px;
+                text-align: center;
+                margin: 20px 0;
+
+            }
+            p{
+                margin-bottom: 40px;
+                width: 600px;
+                text-align: center;
+                font-size: 18px;
+
+            } 
+            .play-btn{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background: #fff;
+                font-size: 30px;
+                color: rgb(25, 34, 170);
+                text-align: center;
+                padding-top: 20px;
+                padding-left: 5px;
+                position: relative;
+                
+                &:hover{
+                    background: #3763eb;
+                    color: #fff;
+                }
+               
+                &::before{
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    // background: rgb(2, 24, 29);
+                    background: #fff;
+                    position: absolute;
+                    top:  0;
+                    left: 0;
+                    border-radius: 50%;
+                    animation: mili 2s ease-out infinite;
+                    @keyframes mili{
+                        0%,30%{
+                            transform: scale(0);
+                            opacity: 1;
+    
+                        }
+                        50%{
+                            transform: scale(1.5);
+                            opacity: 7;
+    
+                        }
+                        100%{
+                            transform: scale(2);
+                            opacity: 0;
+    
+                        }
+                        
+                    } 
+
+
+                }
+                
+
+
+            }
+
+        }
+    
+   
+    
+    
+}
